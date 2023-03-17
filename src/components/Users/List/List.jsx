@@ -7,10 +7,14 @@ const List = (props) => {
     <>
       <Card className={classes.users}>
         <ul>
-          {props.users.map((user) => {
-            <li>
-              {user.name} ({user.age} years old)
-            </li>;
+          {props.users.map((e) => {
+            return (
+              <>
+                <li>
+                  {e.name} ({e.age} years old)
+                </li>
+              </>
+            );
           })}
         </ul>
       </Card>
