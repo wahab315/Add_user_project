@@ -10,7 +10,6 @@ function App() {
     });
   };
   console.log(userList);
-
   const ListView = () => {
     if (userList.length > 0) {
       return (
@@ -26,7 +25,6 @@ function App() {
       );
     }
   };
-
   return (
     <>
       <AddUser onAddUser={addUserHandler} />
